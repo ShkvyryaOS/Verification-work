@@ -50,3 +50,7 @@ PrintArray(Arr);
 Console.WriteLine("Введите максимальное количество символов в элементax создаваемого массива");
 int condition=Convert.ToInt32(Console.ReadLine());
 int NewArrSize=CountElement(Arr, condition);
+string [] NewArr=NewSortArray(Arr, NewArrSize, condition);
+
+Console.WriteLine("Новый массив с элементами требуемой длины:");
+PrintArray(NewArr);
