@@ -20,3 +20,18 @@
         
 return count;
  }
+
+
+string [] NewSortArray(string []array, int sizeNewArr, int size)
+{
+string [] NewArr= new string[sizeNewArr];
+int j=0;
+    while (j<sizeNewArr)
+        for (int i=0; i<array.Length; i++)
+            if  (array[i].Length<=size)
+                { 
+                NewArr[j]=array [i];
+                j++;
+                }
+return NewArr; 
+}
