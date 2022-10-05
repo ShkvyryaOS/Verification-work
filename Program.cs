@@ -42,3 +42,11 @@ void PrintArray (string[] array)
          Console.Write (array[i]+" ");
  Console.WriteLine();   
 }
+
+string [] Arr=CreateArray();
+Console.WriteLine("Массив введенный пользователем:");
+PrintArray(Arr);
+
+Console.WriteLine("Введите максимальное количество символов в элементax создаваемого массива");
+int condition=Convert.ToInt32(Console.ReadLine());
+int NewArrSize=CountElement(Arr, condition);
