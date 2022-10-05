@@ -10,3 +10,13 @@
         }
  return arr;
  }
+
+ int CountElement(string []array, int size)
+ {
+    int count=0;
+        for (int i=0; i<array.Length; i++)
+               if  (array[i].Length<=size)
+                count++;
+        
+return count;
+ }
